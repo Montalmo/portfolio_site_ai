@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --bg-black: #000000;
+  --text-white: #ffffff;
+}
+
+body {
+  background: radial-gradient(circle at bottom center, #FF6A00 0%, #0A0A0A 60%);
+  color: var(--text-white);
+  overflow-x: hidden;
+}
+
+/* Custom marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
