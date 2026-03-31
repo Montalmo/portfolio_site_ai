@@ -11,7 +11,7 @@
 }
 
 body {
-  background: radial-gradient(circle at bottom center, #FF6A00 0%, #0A0A0A 60%);
+  background: #0A0A0A;
   color: var(--text-white);
   overflow-x: hidden;
 }
@@ -26,6 +26,11 @@ body {
   display: flex;
   white-space: nowrap;
   animation: marquee 30s linear infinite;
+}
+
+/* Hero background gradient */
+.hero-gradient {
+  background: radial-gradient(circle at bottom center, #FF6A00 0%, #0A0A0A 60%);
 }
 
 /* Desktop layout adjustments for 1920px+ screens */

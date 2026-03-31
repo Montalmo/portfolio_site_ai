@@ -20,7 +20,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-transparent text-white font-sans selection:bg-orange-500/30">
+    <div className="min-h-screen text-white font-sans selection:bg-orange-500/30">
       {/* Navigation */}
       <header className="fixed top-0 left-0 w-full z-50 px-4 py-6 md:px-6 md:py-8">
         <div className="max-w-7xl mx-auto grid grid-cols-12 items-center">
@@ -67,7 +67,7 @@ export default function App() {
       {/* Hero Section */}
       <main className="relative h-screen flex flex-col justify-end items-center overflow-hidden">
         {/* Background Layer */}
-        <div className="absolute inset-0 z-0 flex justify-center items-end">
+        <div className="absolute inset-0 z-0 flex justify-center items-end hero-gradient">
           
           {/* Skills Marquee - NOW BEHIND THE IMAGE */}
           <div className="absolute top-1/2 -translate-y-1/2 left-0 w-full z-10 border-y border-white/5 py-8 bg-transparent">
@@ -116,6 +116,13 @@ export default function App() {
           </motion.p>
         </div>
       </main>
+
+      {/* About Me Section */}
+      <section id="about" className="h-screen bg-[#000000]">
+        <div className="max-w-7xl mx-auto h-full">
+          {/* Content to be added later */}
+        </div>
+      </section>
     </div>
   );
 }
