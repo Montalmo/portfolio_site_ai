@@ -27,3 +27,10 @@ body {
   white-space: nowrap;
   animation: marquee 30s linear infinite;
 }
+
+/* Desktop layout adjustments for 1920px+ screens */
+@media (min-width: 1920px) {
+  .max-w-7xl {
+    max-width: 1600px;
+  }
+}

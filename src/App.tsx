@@ -5,6 +5,7 @@
 
 import { Menu, Linkedin, Dribbble, Send } from "lucide-react";
 import { motion } from "motion/react";
+import heroImage from "./assets/images/hero.png";
 
 export default function App() {
   const skills = [
@@ -84,7 +85,7 @@ export default function App() {
 
           {/* Hero Image */}
           <img
-            src="/src/assets/images/hero.png" // ЗАМІНІТЬ НА ВАШЕ ФОТО
+            src={heroImage}
             alt="Sadoviy Andrii"
             className="h-[95vh] w-auto max-w-none object-bottom z-20 relative"
             referrerPolicy="no-referrer"
